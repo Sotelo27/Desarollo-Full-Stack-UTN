@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ11-CONVERSORGRADOS</title>
+</head>
+<body>
+    <form >
+        Ingrese valor en celsius y se convertira en Farenheit
+        <input type="number" placeholder="Ingrese valor en celsius" size="20" id = 'celsius'>
+        <p></p>
+        <a> <button onclick="conversorCelsiusFarenheit()">Convertir</button></a>
+    </form>
+    <script>
+        //EJ11
+        function conversorCelsiusFarenheit(){
+            let valorFahrenheit = (document.getElementById('celsius').value * 1.18) + 32;
+            alert(valorFahrenheit);
+        }
+    </script>
+</body>
+</html>

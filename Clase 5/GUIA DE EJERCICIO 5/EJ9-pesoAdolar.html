@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        Ingrese valor en dolar y se convertira en pesos: 
+        <input type="number" placeholder="Ingrese valor en dolar" size="20" id = 'dolar'>
+        <p></p>
+        <a> <button onclick="conversorDolarPeso()">Convertir</button></a>
+    </form>
+    <script>
+        //EJ9
+        function conversorDolarPeso(){
+            let valorpeso = document.getElementById('dolar').value * 300;
+            alert(valorpeso);
+        }
+    </script>
+</body>
+</html>

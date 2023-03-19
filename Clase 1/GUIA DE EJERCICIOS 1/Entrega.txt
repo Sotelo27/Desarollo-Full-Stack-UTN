@@ -1,0 +1,41 @@
+EJ1-AUTOCOROLLA.js
+let auto = 'Corolla';
+console.log(auto);
+
+------------------------------
+
+EJ2-AUTO308.js
+let auto = ' 308';
+console.log(auto)
+
+------------------------------
+
+EJ3-AUTOC4.js
+let auto = 'C4';
+console.log(auto);
+
+------------------------------
+
+EJ4-NOMBREAPELLIDO.js
+let nombre = 'Martin';
+let apellido = 'Sotelo';
+console.log(nombre + ' ' + apellido);
+
+------------------------------
+
+EJ5-FRUTA.js
+let fruta = 'naranja';
+let tipoVariableFruta = typeof(fruta);
+console.log(tipoVariableFruta);
+
+-------------------------------
+
+EJ6-TIPOVARIABLE.js
+let auto1 = 'Corolla';
+let auto2 = 308;
+let auto3 = 'C4';
+let nombre = 'Martin Sotelo';
+let fruta = 'naranja';
+console.log(typeof(auto1),typeof(auto2),typeof(auto3),typeof(nombre),typeof(fruta));
+
+---------------------------------
