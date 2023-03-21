@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Introduzca a continuacion su nombre: 
+    <input name="nombrePersona" size="25" id="nombrePersona" >
+    <br>
+    <button onclick="listarPersonas()">Registrar</button>
+    <ul id="listaDesordenada">
+        <li></li>
+    </ul>
+    <script>
+        let listaPersonas =['hola'];
+        let contador = 0;
+        function concatenarValores(array,valor,posicion){
+            array[posicion] = valor;
+        }
+
+        function agregarListaAWeb(){
+            document.getElementById("listaDesordenada").innerHTML =listaPersonas;
+        }
+
+        function listarPersonas(){
+            let persona = document.getElementById("nombrePersona").value;
+            concatenarValores(listaPersonas,persona,contador);
+            agregarListaAWeb(listaPersonas);
+            console.log(listaPersonas);
+            contador ++;
+        }
+
+        
+    </script>
+</body>
+</html>

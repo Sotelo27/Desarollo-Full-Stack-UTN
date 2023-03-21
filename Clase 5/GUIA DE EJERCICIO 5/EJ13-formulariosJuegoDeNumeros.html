@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Seleccione a continuacion uno de los siguientes numeros, tiene un total de 3 intentos para acertar el numero.
+    <select class = "" name="valores" id="numeros">
+        <option value = 0  onclick="evaluarCorrecta(this.value)">0</option>
+        <option value = 1 onclick="evaluarCorrecta(this.value)">1</option>
+        <option value = 2 onclick="evaluarCorrecta(this.value)">2</option>
+        <option value = 3 onclick="evaluarCorrecta(this.value)" >3</option>
+        <option value = 4 onclick="evaluarCorrecta(this.value)">4</option>
+        <option value = 5 onclick="evaluarCorrecta(this.value)">5</option>
+    </select>
+    <script>
+        let valor = Math.floor(Math.random()*5);
+        valor = valor.toString();
+        let intentos = 0;
+        console.log(valor);
+        console.log(intentos);
+        function evaluarCorrecta(valorElegido){
+            if (valorElegido === valor){
+                alert("ACERTASTE!!!");
+                valor = Math.floor(Math.random()*5);
+                valor = valor.toString();
+                intentos = 0;
+            }else if (intentos !==3){
+                intentos +=1;
+            }else{
+                alert("PERDISTE!!!!");
+                valor = Math.floor(Math.random()*5);
+                valor = valor.toString();
+                intentos = 0;
+            }
+            console.log(valor);
+            console.log(intentos);
+        }
+    </script>
+</body>
+</html>

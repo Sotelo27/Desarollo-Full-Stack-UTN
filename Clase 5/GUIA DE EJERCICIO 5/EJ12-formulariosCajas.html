@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Nombre del cliente:
+        <input type = 'text' placeholder="ingrese su nombre aqui" size="20" id = "nombre">
+        <br>
+        Seleccione el material de la caja: 
+        <select class="" name="Material" id = "material">
+            <option value = "Madera" >Madera</option>
+            <option value = "Acero" >Acero</option>
+            <option value = "Plastico" >Plastico</option>
+        </select><br>
+        <div >
+            Seleccione el Tamanio: <br>
+            <input type="radio" name="tamanio" value="Diminuto" id="diminuto" /> Diminuto
+            <input type="radio" name="tamanio" value="Mediano" id="mediano" /> Mediano
+            <input type = "radio" name="tamanio" value="Grande" id = "grande"/> Grande
+        </div >
+        Comentarios:<br>
+        <textarea name = "Comentarios" rows = "5" cols="25" id = "comentarios"></textarea>
+        <p></p>
+        <button onclick="mostrarValoresSeleccionados()">Enviar</button>
+    </form>
+    <script>
+        function mostrarValoresSeleccionados(){
+            let valor = document.getElementById("diminuto").value
+            if (document.getElementById("mediano").checked){
+                valor = document.getElementById("mediano").value;
+            }else{
+                valor = document.getElementById("grande").value;
+            }
+            let valores = document.getElementById("nombre").value + " ha pedido una caja de " + document.getElementById("material").value + " con unas dimensiones " + valor +"." + document.getElementById("comentarios").value + ".";
+            alert(valores);
+        }
+    </script>
+</body>
+</html>
