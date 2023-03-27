@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+.container{
+    width: 50%;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 30%;
+    border-radius: 5px;
+    border: 10px solid black;
+    background-color: rgba(166, 210, 245, 0.74);
+}
+.flex-img{
+    display: flex;
+    justify-content: center;
+}
+.imgMia{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+.link{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: 5vh;
+    background-color: rgba(47, 111, 185, 0.74);
+    border-radius: 7vh;
+    border: 5px solid whitesmoke;
+}
+.link:hover{
+    background-color: mintcream;
+    transform: scale(1.2);
+
+}
+.linktree{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(12, 8, 3);
+    margin-top: 5vh;
+}
+
+.linkedin{
+    margin-top: 5vh;
+    margin-left: 13vh;
+}
+
+.github{
+    margin-left: 2vh;
+}
+
+.reddit{
+    margin-left: 2vh;
+}
+
+.icons{
+    
+    margin-left: 2vh;
+    margin-top: 5vh;
+}
